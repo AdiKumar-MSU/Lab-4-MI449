@@ -1,7 +1,30 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Planetary Playing Cards
 ---
+<div class="heading"><h1>Planetary Playing Cards</h1></div> 
+<div class="wrapper">
+    <div class="module one">{% Card 'Sun' 'sun-avatar' 'Type G2V' %}</div>
+    <div class="module two">{% Card 'Mercury' 'mercury-avatar' 'AU 0.39' %}</div>
+    <div class="module three">{% Card 'Venus' 'venus-avatar' 'AU 0.72' %}</div>
+    <div class="module four">{% Card 'Earth' 'earth-avatar' 'AU 1.00' %}</div>
+    <div class="module five">{% Card 'Mars' 'mars-avatar' 'AU 1.52' %}</div>
+    <div class="module six">{% Card 'Jupiter' 'jupiter-avatar' 'AU 5.20' %}</div>
+    <div class="module seven">{% Card 'Saturn' 'saturn-avatar' 'AU 9.58' %}</div>
+    <div class="module eight">{% Card 'Uranus' 'uranus-avatar' 'AU 19.22' %}</div>
+    <div class="module nine">{% Card 'Neptune' 'neptune-avatar' 'AU 30.05' %}</div>
+  </div>
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+  <script>
+    ScrollReveal().reveal('.module.one', {delay: 100});
+    ScrollReveal().reveal('.module.two', {delay: 200});
+    ScrollReveal().reveal('.module.three', {delay: 300});
+    ScrollReveal().reveal('.module.four', {delay: 400});
+    ScrollReveal().reveal('.module.five', {delay: 500});
+    ScrollReveal().reveal('.module.six', {delay: 600});
+    ScrollReveal().reveal('.module.seven', {delay: 700});
+    ScrollReveal().reveal('.module.eight', {delay: 800});
+    ScrollReveal().reveal('.module.nine', {delay: 900});
+  </script>
+  
+

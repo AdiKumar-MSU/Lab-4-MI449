@@ -1,6 +1,13 @@
+ScrollReveal().reveal('.module');
 
-// The export statement makes these settings available to other files in 11ty
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
+  eleventyConfig.addShortcode("Card", function(name, avatar, AU) {
+    return `
+		    <span class="${avatar}"></span>
+		    <h2 class="planet__name">${name}</h2>
+        <h3 class="AU">${AU}</h3>
+    `;
+  });
+
 };
