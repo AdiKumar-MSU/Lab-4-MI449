@@ -1,5 +1,3 @@
-ScrollReveal().reveal('.module');
-
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles");
   eleventyConfig.addShortcode("Card", function(name, avatar, AU) {
